@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  scroll-behavior: smooth
+}
+
+.btn{
+    @apply px-4 py-2 rounded-md text-white;
+}
+   
+
+.flex-centered{
+  @apply flex justify-center items-center;
+} 
+.hero{
+  @apply w-[100vw] flex-col bg-center bg-contain h-[100vh] max-w-full flex items-center justify-center;
+  background:linear-gradient(#00000065,#00000065),url('images/about.jpg') no-repeat;
+}
+
+
+.nav{
+  @apply gap-[4vw] flex text-white items-center;
+  @apply flex-col md:flex-row md:static absolute top-0 ;
+  @apply p-16 md:static bg-purple-500 h-[100vh] md:h-auto md:p-0 md:bg-transparent;
+}
+
+
+.box-shad{
+  background-color: rgba(255, 255, 255, 0.5);
+  @apply z-0;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.glass{
+  background-color: #d2d4df;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* canvas codes */
+.custom-shape-divider-bottom-1679402926 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679402926 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 160px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1679402926 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1679402926 svg {
+      width: calc(300% + 1.3px);
+      height: 204px;
+  }
+}
+
+.services{
+  background: #AA076B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #a855f7, #faaca8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom,#a855f7, #faaca8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}.custom-shape-divider-top-1679486558 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1679486558 svg {
+  position: relative;
+  display: block;
+  width: calc(169% + 1.3px);
+  height: 75px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1679486558 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-top-1679488066 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1679488066 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 67px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1679488066 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+.hide{
+  opacity: 0;
+  transition: 1s all;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+@media (prefers-reduced-motion:reduce){
+  .hide{
+    transition: none;
+  }
+}
+.show{
+  opacity: 1;
+  /* transition: 1s all 1.3s; */
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.slide_item:nth-child(2){
+  transition-delay: 200ms;
+}
+.slide_item:nth-child(3){
+  transition-delay: 500ms;
+}
+.slide_item:nth-child(4){
+  transition-delay: 700ms;
+}
+
+
+/* for services section */
+
+.slide_it:nth-child(2){
+  transition-delay: 200ms;
+}
+.slide_it:nth-child(3){
+  transition-delay: 600ms;
+}
+.slide_it:nth-child(4){
+  transition-delay: 1000ms;
+}
+.slide_it:nth-child(5){
+  transition-delay: 1400ms;
+}
+.slide_it:nth-child(6){
+  transition-delay: 1800ms;
+}
+.slide_it:nth-child(7){
+  transition-delay: 2200ms;
+}.slide_it:nth-child(8){
+  transition-delay: 2600ms;
+}
+.slide_it:nth-child(9){
+  transition-delay: 3000ms;
+}
+.slide_it:nth-child(10){
+  transition-delay: 3400ms;
+}
+
+.service-bx{
+  @apply bg-white rounded-lg cursor-pointer;
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* For Neumorphism Effect */
+  border: none;
+  @apply text-black w-[180px] py-8 text-center;
+}
